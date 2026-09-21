@@ -1,0 +1,198 @@
+/* ═══════════════════════════════════════════════════════════════
+   GENZPHOTO — Service Section Decorative Patterns
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Each service card gets a unique decorative SVG pattern overlay */
+.service-img-1 {
+  background-image:
+    radial-gradient(ellipse 60% 80% at 50% 20%, rgba(212,175,55,0.12) 0%, transparent 50%),
+    linear-gradient(160deg, #1a0e04 0%, #0f0a00 50%, #080808 100%);
+}
+
+.service-img-2 {
+  background-image:
+    radial-gradient(ellipse 60% 80% at 50% 20%, rgba(180,120,220,0.08) 0%, transparent 50%),
+    linear-gradient(160deg, #0f0416 0%, #060210 50%, #060606 100%);
+}
+
+.service-img-3 {
+  background-image:
+    radial-gradient(ellipse 60% 80% at 50% 20%, rgba(50,200,100,0.08) 0%, transparent 50%),
+    linear-gradient(160deg, #041209 0%, #020e06 50%, #030303 100%);
+}
+
+.service-img-4 {
+  background-image:
+    radial-gradient(ellipse 60% 80% at 50% 20%, rgba(100,150,255,0.08) 0%, transparent 50%),
+    linear-gradient(160deg, #020a18 0%, #010610 50%, #020202 100%);
+}
+
+/* ──────────────────────────────────────────────
+   Team Member Photo Enhancements
+─────────────────────────────────────────────── */
+.portrait-1 {
+  background:
+    /* Silhouette suggestion via gradient shapes */
+    radial-gradient(ellipse 50% 30% at 50% 25%, rgba(212,175,55,0.15) 0%, transparent 100%),
+    radial-gradient(ellipse 80% 50% at 50% 60%, rgba(40,20,5,0.8) 0%, transparent 100%),
+    linear-gradient(180deg, #2a1f0f 0%, #1a1207 40%, #0d0d0d 100%);
+}
+
+.portrait-2 {
+  background:
+    radial-gradient(ellipse 50% 30% at 50% 25%, rgba(180,130,220,0.12) 0%, transparent 100%),
+    radial-gradient(ellipse 80% 50% at 50% 60%, rgba(20,10,35,0.8) 0%, transparent 100%),
+    linear-gradient(180deg, #1f1530 0%, #120d1e 40%, #0d0d0d 100%);
+}
+
+.portrait-3 {
+  background:
+    radial-gradient(ellipse 50% 30% at 50% 25%, rgba(100,150,255,0.1) 0%, transparent 100%),
+    radial-gradient(ellipse 80% 50% at 50% 60%, rgba(5,15,25,0.8) 0%, transparent 100%),
+    linear-gradient(180deg, #0f1f2a 0%, #0a1520 40%, #0d0d0d 100%);
+}
+
+/* Portrait placeholder icons (camera/person silhouette suggestion) */
+.team-portrait::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  opacity: 0.06;
+}
+
+/* ──────────────────────────────────────────────
+   Shimmer Animation for Camera Cards
+─────────────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.camera-price {
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ──────────────────────────────────────────────
+   Animated Hero Background Elements
+─────────────────────────────────────────────── */
+/* Bokeh circles */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle 200px at 20% 30%, rgba(212,175,55,0.04) 0%, transparent 100%),
+    radial-gradient(circle 300px at 80% 70%, rgba(212,175,55,0.03) 0%, transparent 100%),
+    radial-gradient(circle 150px at 60% 20%, rgba(212,175,55,0.05) 0%, transparent 100%);
+  z-index: 4;
+  pointer-events: none;
+  animation: bokehShift 12s ease-in-out infinite alternate;
+}
+
+@keyframes bokehShift {
+  0%   { opacity: 0.5; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.1); }
+}
+
+/* ──────────────────────────────────────────────
+   Gold Shimmer Line Dividers
+─────────────────────────────────────────────── */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-border), transparent);
+  margin-block: 0;
+}
+
+/* ──────────────────────────────────────────────
+   Pricing Card Glow on Featured
+─────────────────────────────────────────────── */
+.pricing-card.featured {
+  box-shadow: 0 0 60px rgba(212,175,55,0.08), inset 0 0 60px rgba(212,175,55,0.02);
+}
+
+/* ──────────────────────────────────────────────
+   Footer Gold Gradient Line
+─────────────────────────────────────────────── */
+.footer::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 20%, var(--gold-light) 50%, var(--gold) 80%, transparent 100%);
+  opacity: 0.5;
+}
+
+/* ──────────────────────────────────────────────
+   Service Card Number Overlay
+─────────────────────────────────────────────── */
+.service-card:nth-child(1) .service-overlay::before { content: '01'; }
+.service-card:nth-child(2) .service-overlay::before { content: '02'; }
+.service-card:nth-child(3) .service-overlay::before { content: '03'; }
+.service-card:nth-child(4) .service-overlay::before { content: '04'; }
+
+/* ──────────────────────────────────────────────
+   Nav Active State Indicator
+─────────────────────────────────────────────── */
+.nav-links a.active {
+  color: var(--gold);
+}
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* ──────────────────────────────────────────────
+   Hover glow on buttons
+─────────────────────────────────────────────── */
+.btn-gold::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  z-index: -1;
+  opacity: 0;
+  filter: blur(12px);
+  transition: opacity 0.4s ease;
+  border-radius: 4px;
+}
+.btn-gold:hover::after { opacity: 0.4; }
+
+/* ──────────────────────────────────────────────
+   About Section Decorative Lines
+─────────────────────────────────────────────── */
+.about::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 60%;
+  transform: translateY(-50%);
+  background: linear-gradient(180deg, transparent, var(--gold-border), transparent);
+  pointer-events: none;
+}
+
+/* ──────────────────────────────────────────────
+   Responsive Enhancement
+─────────────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 1024px) {
+  .shop-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .hero-stats {
+    padding: 20px 24px;
+    gap: 20px;
+  }
+  .stat-num { font-size: 2rem; }
+  .hero-title { letter-spacing: -0.5px; }
+}

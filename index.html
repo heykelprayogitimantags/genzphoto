@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GENZPHOTO — Premium Photography & Videography Studio | Camera Store</title>
+  <meta name="description" content="GENZPHOTO — Premium photography & videography studio. Capture your precious moments with us. Professional camera retail store." />
+  <meta name="theme-color" content="#D4AF37" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══ PAGE LOADER ═══ -->
+<div id="pageLoader" class="page-loader">
+  <div class="loader-inner">
+    <div class="loader-logo">GENZ<span>PHOTO</span></div>
+    <div class="loader-tagline">Premium Photography Studio</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-percent" id="loaderPercent">0%</div>
+  </div>
+</div>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav id="navbar" class="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="logo">GENZ<span>PHOTO</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <a href="#pricing" class="nav-cta">Book Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ HERO SECTION ═══ -->
+<section id="hero" class="hero">
+  <div class="hero-bg-layer">
+    <!--
+      ┌─────────────────────────────────────────────┐
+      │  HERO BACKGROUND IMAGE:                      │
+      │  Place your photo at: images/hero-bg.jpg     │
+      │  Recommended size: 1920×1080px or larger     │
+      └─────────────────────────────────────────────┘
+    -->
+    <img src="images/hero-bg.jpeg" alt="Hero Background" class="hero-bg-img" onerror="this.style.display='none'" />
+    <div class="hero-overlay-gradient"></div>
+    <div class="hero-grid-pattern"></div>
+    <div class="hero-particles" id="particles"></div>
+  </div>
+
+  <div class="hero-wrapper">
+    <div class="hero-content">
+      <!-- Left: Text -->
+      <div class="hero-text-col">
+        <div class="hero-eyebrow-wrap fade-up">
+          <span class="hero-eyebrow-line"></span>
+          <span class="hero-eyebrow">Premium Photography &amp; Videography Studio</span>
+        </div>
+
+        <h1 class="hero-title fade-up delay-1">
+          Every Moment<br />
+          <span class="hero-title-accent">Deserves to Be</span><br />
+          <span class="hero-title-sub">Captured in Perfection</span>
+        </h1>
+
+        <p class="hero-desc fade-up delay-2">
+          We deliver high-quality visual artistry — from graduation photography, cinematic pre-wedding films, to impactful commercial brand content.
+        </p>
+
+        <div class="hero-actions fade-up delay-3">
+          <a href="#pricing" class="btn btn-gold">
+            <i class="fa-solid fa-calendar-check"></i>
+            Book a Session
+          </a>
+          <a href="#services" class="btn btn-ghost">
+            View Portfolio
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="hero-trust fade-up delay-4">
+          <div class="trust-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Satisfaction Guaranteed</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>On-Time Delivery</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <i class="fa-solid fa-star"></i>
+            <span>5.0 ★ Rated</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Stats Card -->
+      <div class="hero-stats-col fade-up delay-3">
+        <div class="hero-stats-card glass-card">
+          <div class="stat-row">
+            <div class="stat">
+              <span class="stat-num" data-target="500">0</span><span class="gold-text">+</span>
+              <p>Projects Done</p>
+            </div>
+            <div class="stat-divider-v"></div>
+            <div class="stat">
+              <span class="stat-num" data-target="8">0</span><span class="gold-text">+</span>
+              <p>Years Experience</p>
+            </div>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-row">
+            <div class="stat">
+              <span class="stat-num" data-target="300">0</span><span class="gold-text">+</span>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat-divider-v"></div>
+            <div class="stat">
+              <span class="stat-num" data-target="15">0</span><span class="gold-text">+</span>
+              <p>Awards Won</p>
+            </div>
+          </div>
+          <div class="stat-cta-mini">
+            <a href="#services" class="btn-mini-gold">Explore Services <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-review-card glass-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"The results are absolutely stunning! The GENZPHOTO team is incredibly professional and friendly."</p>
+          <div class="review-author">
+            <div class="review-avatar"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <strong>Sarah Williams</strong>
+              <span>Pre-Wedding Client 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll to Discover</span>
+  </div>
+</section>
+
+
+<!-- ═══ ABOUT SECTION ═══ -->
+<section id="about" class="about section-padding">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Left: Visual -->
+      <div class="about-visual reveal-left">
+        <div class="about-img-frame">
+          <div class="about-img-inner">
+            <!--
+              ┌─────────────────────────────────────┐
+              │  ABOUT IMAGE:                        │
+              │  Place photo at: images/about.jpg    │
+              └─────────────────────────────────────┘
+            -->
+            <img src="images/about.jpg" alt="About GENZPHOTO" class="about-real-img" onerror="this.style.display='none'; this.parentElement.querySelector('.about-svg-fallback').style.display='flex'" />
+            <div class="about-svg-fallback">
+              <svg class="about-svg-art" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#F9A826;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <rect x="80" y="160" width="340" height="250" rx="20" fill="#1A1A1A" stroke="url(#goldGrad)" stroke-width="2"/>
+                <rect x="160" y="130" width="130" height="40" rx="10" fill="#1A1A1A" stroke="url(#goldGrad)" stroke-width="2"/>
+                <circle cx="255" cy="285" r="90" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+                <circle cx="255" cy="285" r="72" fill="#0A0A0A" stroke="#333" stroke-width="2"/>
+                <circle cx="255" cy="285" r="52" fill="#111" stroke="url(#goldGrad)" stroke-width="1.5"/>
+                <circle cx="255" cy="285" r="30" fill="url(#goldGrad)" opacity="0.15"/>
+                <circle cx="255" cy="285" r="14" fill="url(#goldGrad)" opacity="0.4"/>
+                <circle cx="210" cy="148" r="12" fill="url(#goldGrad)" opacity="0.8"/>
+                <text x="255" y="395" font-family="Playfair Display" font-size="18" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="4">GENZPHOTO</text>
+              </svg>
+            </div>
+          </div>
+          <div class="about-badge">
+            <span>Established</span>
+            <strong>2024</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Text -->
+      <div class="about-text reveal-right">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title">Born From a<br /><em class="gold-italic">Passion for Light</em></h2>
+        <div class="gold-separator"></div>
+        <p class="about-desc">
+          GENZPHOTO was founded in 2024 by a collective of visual artists who believed every moment deserves to be immortalized with precision and artistry. From a small studio in the heart of the city, we've grown into one of the most sought-after premium photography and videography brands in the region.
+        </p>
+        <p class="about-desc">
+          We serve forward-thinking individuals, couples, brands, and businesses who demand nothing but the best — from graduation memories to cinematic pre-wedding films and high-impact commercial content.
+        </p>
+
+        <div class="about-audience">
+          <h4>We Serve:</h4>
+          <div class="audience-tags">
+            <span>👩‍🎓 Graduates</span>
+            <span>💍 Couples</span>
+            <span>🏢 Corporates</span>
+            <span>📦 Brands & SMEs</span>
+            <span>🎉 Event Organizers</span>
+          </div>
+        </div>
+
+        <div class="vm-grid">
+          <div class="vm-card glass-card">
+            <div class="vm-icon"><i class="fa-solid fa-eye"></i></div>
+            <h4>Vision</h4>
+            <p>To become the leading premium visual storytelling studio that redefines the standard of photographic excellence in Southeast Asia.</p>
+          </div>
+          <div class="vm-card glass-card">
+            <div class="vm-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h4>Mission</h4>
+            <p>To craft timeless visual narratives using cutting-edge technology, artistic sensitivity, and an unwavering commitment to client satisfaction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ SERVICES SECTION ═══ -->
+<section id="services" class="services section-padding">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">What We Offer</p>
+      <h2 class="section-title">Our <em class="gold-italic">Services</em></h2>
+      <p class="section-desc">A curated selection of premium photography and videography services, each crafted to exceed your expectations.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Graduation -->
+      <div class="service-card reveal" data-delay="0">
+        <div class="service-img-wrap">
+          <!--
+            ┌───────────────────────────────────────┐
+            │  GRADUATION IMAGE:                     │
+            │  images/services/graduation.jpg        │
+            │  Recommended: 600×800px                │
+            └───────────────────────────────────────┘
+          -->
+          <img src="images/services/graduation.jpg" alt="Graduation Photography" class="service-img-real" onerror="this.parentElement.classList.add('no-img'); this.style.display='none'" />
+          <div class="service-img-placeholder service-img-1"></div>
+          <div class="service-overlay">
+            <span class="service-cat">Photography</span>
+            <h3>Graduation</h3>
+            <p>Your greatest achievement captured in timeless elegance — because your milestone deserves a story as grand as your future.</p>
+            <a href="#pricing" class="service-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pre-Wedding -->
+      <div class="service-card reveal" data-delay="100">
+        <div class="service-img-wrap">
+          <!--  images/services/prewedding.jpg  -->
+          <img src="images/services/prewedding.jpg" alt="Pre-Wedding Photography" class="service-img-real" onerror="this.parentElement.classList.add('no-img'); this.style.display='none'" />
+          <div class="service-img-placeholder service-img-2"></div>
+          <div class="service-overlay">
+            <span class="service-cat">Photography & Film</span>
+            <h3>Pre-Wedding</h3>
+            <p>Cinematic love stories told through breathtaking visuals — your journey to forever, beautifully preserved.</p>
+            <a href="#pricing" class="service-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product -->
+      <div class="service-card reveal" data-delay="200">
+        <div class="service-img-wrap">
+          <!--  images/services/product.jpg  -->
+          <img src="images/services/product.jpg" alt="Product Photography" class="service-img-real" onerror="this.parentElement.classList.add('no-img'); this.style.display='none'" />
+          <div class="service-img-placeholder service-img-3"></div>
+          <div class="service-overlay">
+            <span class="service-cat">Commercial</span>
+            <h3>Product</h3>
+            <p>Luxury product photography that elevates your brand and compels your audience to look twice, and buy once.</p>
+            <a href="#pricing" class="service-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Events -->
+      <div class="service-card reveal" data-delay="300">
+        <div class="service-img-wrap">
+          <!--  images/services/event.jpg  -->
+          <img src="images/services/events.jpg" alt="Event Documentation" class="service-img-real" onerror="this.parentElement.classList.add('no-img'); this.style.display='none'" />
+          <div class="service-img-placeholder service-img-4"></div>
+          <div class="service-overlay">
+            <span class="service-cat">Event Coverage</span>
+            <h3>Events</h3>
+            <p>From intimate gatherings to grand celebrations — every detail documented with discretion and artistic flair.</p>
+            <a href="#pricing" class="service-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ SHOP SECTION ═══ -->
+<section id="shop" class="shop section-padding">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Camera Store</p>
+      <h2 class="section-title">Premium <em class="gold-italic">Gear</em></h2>
+      <p class="section-desc">Handpicked professional-grade cameras for creators who refuse to compromise on quality.</p>
+    </div>
+
+    <div class="shop-grid">
+      <!-- Sony a6400 -->
+      <div class="camera-card reveal" data-delay="0">
+        <div class="camera-img-wrap">
+          <!--  images/cameras/sony-a6400.png  (transparent PNG recommended)  -->
+          <img src="images/cameras/sony-a6400.jpg" alt="Sony Alpha a6400" class="camera-real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="camera-svg-fallback">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" class="cam-svg">
+              <defs><linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#D4AF37"/><stop offset="100%" style="stop-color:#F9A826"/></linearGradient></defs>
+              <rect x="25" y="35" width="150" height="100" rx="10" fill="#222" stroke="#333" stroke-width="1.5"/>
+              <rect x="65" y="20" width="60" height="22" rx="6" fill="#222" stroke="#444" stroke-width="1"/>
+              <circle cx="100" cy="85" r="35" fill="none" stroke="url(#cg1)" stroke-width="2.5"/>
+              <circle cx="100" cy="85" r="24" fill="#111"/><circle cx="100" cy="85" r="12" fill="url(#cg1)" opacity="0.25"/>
+              <circle cx="80" cy="27" r="7" fill="url(#cg1)" opacity="0.85"/>
+              <text x="100" y="148" font-size="8" fill="#666" text-anchor="middle" font-family="Inter,sans-serif">SONY α6400</text>
+            </svg>
+          </div>
+          <div class="camera-img-shine"></div>
+        </div>
+        <div class="camera-pedestal-line"></div>
+        <div class="camera-info">
+          <span class="camera-badge">Best Seller</span>
+          <h3>Sony Alpha a6400</h3>
+          <p class="camera-spec">24.2MP APS-C · 4K Video · Real-time Eye AF</p>
+          <div class="camera-bottom">
+            <span class="camera-price">$899</span>
+            <button class="btn-cart" data-name="Sony Alpha a6400"><i class="fa-solid fa-bag-shopping"></i> Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fujifilm X-T30 II -->
+      <div class="camera-card reveal" data-delay="100">
+        <div class="camera-img-wrap">
+          <img src="images/cameras/fujifilm-xt30.jpg" alt="Fujifilm X-T30 II" class="camera-real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="camera-svg-fallback">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" class="cam-svg">
+              <defs><linearGradient id="cg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#D4AF37"/><stop offset="100%" style="stop-color:#F9A826"/></linearGradient></defs>
+              <rect x="20" y="32" width="160" height="105" rx="12" fill="#1e1e1e" stroke="#333" stroke-width="1.5"/>
+              <rect x="60" y="16" width="70" height="24" rx="7" fill="#1e1e1e" stroke="#444" stroke-width="1"/>
+              <circle cx="100" cy="84" r="37" fill="none" stroke="url(#cg2)" stroke-width="2.5"/>
+              <circle cx="100" cy="84" r="26" fill="#0a0a0a"/><circle cx="100" cy="84" r="14" fill="url(#cg2)" opacity="0.22"/>
+              <circle cx="78" cy="26" r="8" fill="url(#cg2)" opacity="0.8"/>
+              <text x="100" y="148" font-size="8" fill="#666" text-anchor="middle" font-family="Inter,sans-serif">FUJIFILM X-T30 II</text>
+            </svg>
+          </div>
+          <div class="camera-img-shine"></div>
+        </div>
+        <div class="camera-pedestal-line"></div>
+        <div class="camera-info">
+          <span class="camera-badge badge-blue">New Arrival</span>
+          <h3>Fujifilm X-T30 II</h3>
+          <p class="camera-spec">26.1MP X-Trans · Film Simulation · 4K UHD</p>
+          <div class="camera-bottom">
+            <span class="camera-price">$799</span>
+            <button class="btn-cart" data-name="Fujifilm X-T30 II"><i class="fa-solid fa-bag-shopping"></i> Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canon EOS R50 -->
+      <div class="camera-card reveal" data-delay="200">
+        <div class="camera-img-wrap">
+          <img src="images/cameras/canon-r50.jpg" alt="Canon EOS R50" class="camera-real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="camera-svg-fallback">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" class="cam-svg">
+              <defs><linearGradient id="cg3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#D4AF37"/><stop offset="100%" style="stop-color:#F9A826"/></linearGradient></defs>
+              <rect x="28" y="38" width="144" height="95" rx="9" fill="#1c1c1c" stroke="#333" stroke-width="1.5"/>
+              <rect x="68" y="24" width="60" height="21" rx="5" fill="#1c1c1c" stroke="#444" stroke-width="1"/>
+              <circle cx="100" cy="85" r="32" fill="none" stroke="url(#cg3)" stroke-width="2.5"/>
+              <circle cx="100" cy="85" r="22" fill="#090909"/><circle cx="100" cy="85" r="11" fill="url(#cg3)" opacity="0.28"/>
+              <circle cx="80" cy="32" r="6" fill="url(#cg3)" opacity="0.9"/>
+              <text x="100" y="147" font-size="8" fill="#666" text-anchor="middle" font-family="Inter,sans-serif">CANON EOS R50</text>
+            </svg>
+          </div>
+          <div class="camera-img-shine"></div>
+        </div>
+        <div class="camera-pedestal-line"></div>
+        <div class="camera-info">
+          <span class="camera-badge badge-red">Popular</span>
+          <h3>Canon EOS R50</h3>
+          <p class="camera-spec">24.2MP RF Mount · 4K Crop · Dual Pixel AF II</p>
+          <div class="camera-bottom">
+            <span class="camera-price">$749</span>
+            <button class="btn-cart" data-name="Canon EOS R50"><i class="fa-solid fa-bag-shopping"></i> Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sony A7 III -->
+      <div class="camera-card reveal" data-delay="300">
+        <div class="camera-img-wrap">
+          <img src="images/cameras/sony-a7iii.jpg" alt="Sony A7 III" class="camera-real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="camera-svg-fallback">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" class="cam-svg">
+              <defs><linearGradient id="cg4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#D4AF37"/><stop offset="100%" style="stop-color:#F9A826"/></linearGradient></defs>
+              <rect x="18" y="30" width="164" height="108" rx="11" fill="#181818" stroke="#333" stroke-width="1.5"/>
+              <rect x="58" y="14" width="74" height="26" rx="8" fill="#181818" stroke="#444" stroke-width="1"/>
+              <circle cx="100" cy="84" r="40" fill="none" stroke="url(#cg4)" stroke-width="2.5"/>
+              <circle cx="100" cy="84" r="28" fill="#080808"/><circle cx="100" cy="84" r="15" fill="url(#cg4)" opacity="0.2"/>
+              <circle cx="76" cy="24" r="9" fill="url(#cg4)" opacity="0.85"/>
+              <text x="100" y="149" font-size="8" fill="#666" text-anchor="middle" font-family="Inter,sans-serif">SONY A7 III</text>
+            </svg>
+          </div>
+          <div class="camera-img-shine"></div>
+        </div>
+        <div class="camera-pedestal-line"></div>
+        <div class="camera-info">
+          <span class="camera-badge">Best Pro</span>
+          <h3>Sony A7 III</h3>
+          <p class="camera-spec">24.2MP Full-Frame · 693 PDAF · 4K HDR</p>
+          <div class="camera-bottom">
+            <span class="camera-price">$1,799</span>
+            <button class="btn-cart" data-name="Sony A7 III"><i class="fa-solid fa-bag-shopping"></i> Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- GoPro HERO 12 -->
+      <div class="camera-card reveal" data-delay="400">
+        <div class="camera-img-wrap">
+          <img src="images/cameras/gopro-hero12.jpg" alt="GoPro HERO 12" class="camera-real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="camera-svg-fallback">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" class="cam-svg">
+              <defs><linearGradient id="cg5" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#D4AF37"/><stop offset="100%" style="stop-color:#F9A826"/></linearGradient></defs>
+              <rect x="55" y="30" width="90" height="78" rx="16" fill="#1a1a1a" stroke="url(#cg5)" stroke-width="1.5" opacity="0.8"/>
+              <circle cx="100" cy="69" r="22" fill="none" stroke="url(#cg5)" stroke-width="2"/>
+              <circle cx="100" cy="69" r="15" fill="#0a0a0a"/><circle cx="100" cy="69" r="7" fill="url(#cg5)" opacity="0.3"/>
+              <rect x="62" y="38" width="24" height="16" rx="3" fill="#0d1a2a" stroke="#334"/>
+              <circle cx="134" cy="42" r="7" fill="url(#cg5)" opacity="0.8"/>
+              <text x="100" y="137" font-size="8" fill="#666" text-anchor="middle" font-family="Inter,sans-serif">GOPRO HERO 12</text>
+            </svg>
+          </div>
+          <div class="camera-img-shine"></div>
+        </div>
+        <div class="camera-pedestal-line"></div>
+        <div class="camera-info">
+          <span class="camera-badge badge-green">Adventure</span>
+          <h3>GoPro HERO 12</h3>
+          <p class="camera-spec">27MP · 5.3K60 Video · HyperSmooth 6.0</p>
+          <div class="camera-bottom">
+            <span class="camera-price">$449</span>
+            <button class="btn-cart" data-name="GoPro HERO 12"><i class="fa-solid fa-bag-shopping"></i> Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ TEAM SECTION ═══ -->
+<section id="team" class="team section-padding">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">The People</p>
+      <h2 class="section-title">Meet Our <em class="gold-italic">Team</em></h2>
+      <p class="section-desc">The creative minds and technical experts behind every stunning frame we produce.</p>
+    </div>
+
+    <div class="team-grid">
+      <!-- Member 1 -->
+      <div class="team-card reveal" data-delay="0">
+        <div class="team-img-wrap">
+          <!--
+            ┌─────────────────────────────────────────┐
+            │  TEAM PHOTO 1:                           │
+            │  images/team/member1.jpg                 │
+            │  Recommended: 400×400px (square)         │
+            └─────────────────────────────────────────┘
+          -->
+          <div class="team-ring-outer"></div>
+          <div class="team-portrait-wrap">
+            <img src="images/team/member1.png" alt="Rafi Ardiansyah" class="team-portrait-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+            <div class="team-portrait-fallback"><i class="fa-solid fa-camera"></i><span>Upload Photo</span></div>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3>Frendy Gabriel Ginting</h3>
+          <span class="team-role">Lead Photographer</span>
+          <p>2 years of capturing emotion through light and shadow. Specializes in cinematic portraiture and pre-wedding films.</p>
+          <div class="team-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-behance"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="team-card reveal" data-delay="150">
+        <div class="team-img-wrap">
+          <!--  images/team/member2.jpg  -->
+          <div class="team-ring-outer"></div>
+          <div class="team-portrait-wrap">
+            <img src="images/team/member2.jpg" alt="Alya Maharani" class="team-portrait-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+            <div class="team-portrait-fallback"><i class="fa-solid fa-palette"></i><span>Upload Photo</span></div>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3>KAIS</h3>
+          <span class="team-role">Visual Editor & Colorist</span>
+          <p>Award-winning post-production artist with a keen eye for cinematic color grading and visual storytelling.</p>
+          <div class="team-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ PRICING SECTION ═══ -->
+<section id="pricing" class="pricing section-padding">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Investment</p>
+      <h2 class="section-title">Choose Your <em class="gold-italic">Package</em></h2>
+      <p class="section-desc">Transparent pricing with no hidden fees. Every package includes our signature quality guarantee.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Basic -->
+      <div class="pricing-card reveal" data-delay="0">
+        <div class="pricing-top">
+          <div class="pricing-icon"><i class="fa-solid fa-camera"></i></div>
+          <h3>Basic</h3>
+          <p class="pricing-sub">Perfect for individuals</p>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">150</span>
+            <span class="price-period">/ session</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> 2 Hours Studio Session</li>
+          <li><i class="fa-solid fa-check"></i> 20 Edited Photos</li>
+          <li><i class="fa-solid fa-check"></i> 1 Outfit Change</li>
+          <li><i class="fa-solid fa-check"></i> Digital Delivery (HD)</li>
+          <li><i class="fa-solid fa-check"></i> Basic Retouching</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Videography</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Print Package</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Drone Coverage</li>
+        </ul>
+        <a href="#" class="btn btn-outline-gold w-full">Book Basic</a>
+      </div>
+
+      <!-- Standard -->
+      <div class="pricing-card featured reveal" data-delay="100">
+        <div class="pricing-badge-top">Most Popular</div>
+        <div class="pricing-top">
+          <div class="pricing-icon"><i class="fa-solid fa-star"></i></div>
+          <h3>Standard</h3>
+          <p class="pricing-sub">For couples & small groups</p>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">350</span>
+            <span class="price-period">/ session</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> 4 Hours Studio + Outdoor</li>
+          <li><i class="fa-solid fa-check"></i> 50 Edited Photos</li>
+          <li><i class="fa-solid fa-check"></i> 3 Outfit Changes</li>
+          <li><i class="fa-solid fa-check"></i> Digital + Print (5R × 10)</li>
+          <li><i class="fa-solid fa-check"></i> Advanced Retouching</li>
+          <li><i class="fa-solid fa-check"></i> Short Video Reel (1 min)</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Premium Print Album</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Drone Coverage</li>
+        </ul>
+        <a href="#" class="btn btn-gold w-full">Book Standard</a>
+      </div>
+
+      <!-- Premium -->
+      <div class="pricing-card reveal" data-delay="200">
+        <div class="pricing-top">
+          <div class="pricing-icon"><i class="fa-solid fa-gem"></i></div>
+          <h3>Premium</h3>
+          <p class="pricing-sub">For events & corporations</p>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">899</span>
+            <span class="price-period">/ session</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> Full Day Coverage (8hrs)</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited Edited Photos</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited Outfits</li>
+          <li><i class="fa-solid fa-check"></i> Premium Print Album</li>
+          <li><i class="fa-solid fa-check"></i> Cinematic Retouching</li>
+          <li><i class="fa-solid fa-check"></i> Cinematic Film (5 min)</li>
+          <li><i class="fa-solid fa-check"></i> Drone Coverage</li>
+          <li><i class="fa-solid fa-check"></i> 2 Photographers + Editor</li>
+        </ul>
+        <a href="#" class="btn btn-outline-gold w-full">Book Premium</a>
+      </div>
+    </div>
+
+    <p class="pricing-note reveal">All packages include a pre-shoot consultation. Custom packages available upon request — <a href="#footer" class="gold-link">contact us</a>.</p>
+  </div>
+</section>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer id="footer" class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="#hero" class="logo footer-logo">GENZ<span>PHOTO</span></a>
+          <p>Where artistry meets technology. Creating visual stories that transcend time and resonate with the soul.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#shop">Camera Shop</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Operating Hours</h4>
+          <ul class="hours-list">
+            <li><span>Monday – Friday</span><span class="gold-text">09:00 – 18:00</span></li>
+            <li><span>Saturday</span><span class="gold-text">10:00 – 15:00</span></li>
+            <li><span>Sunday</span><span class="closed-text">Closed</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i><span>Jl. Premium Studio No. 12, South Jakarta, Indonesia</span></li>
+            <li><i class="fa-solid fa-phone"></i><a href="tel:+6281234567890">+62 812-3456-7890</a></li>
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:hello@genzphoto.id">hello@genzphoto.id</a></li>
+            <li><i class="fa-brands fa-whatsapp"></i><a href="#">WhatsApp Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 <span class="gold-text">GENZPHOTO</span>. All rights reserved. Crafted with passion.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div id="cartToast" class="cart-toast">
+  <i class="fa-solid fa-circle-check"></i>
+  <span id="cartToastMsg">Item added to cart!</span>
+</div>
+
+<!-- Back to Top -->
+<button id="backTop" class="back-top" aria-label="Back to top">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
