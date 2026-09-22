@@ -36,10 +36,16 @@
       <li><a href="#team">Team</a></li>
       <li><a href="#pricing">Pricing</a></li>
     </ul>
-    <a href="#pricing" class="nav-cta">Book Now</a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-actions">
+      <button id="cartToggleBtn" class="nav-cart-btn" aria-label="Open Shopping Cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span id="cartBadge" class="cart-badge">0</span>
+      </button>
+      <a href="#pricing" class="nav-cta">Book Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </nav>
 
@@ -338,9 +344,8 @@
 
     <div class="shop-grid">
       <!-- Sony a6400 -->
-      <div class="camera-card reveal" data-delay="0">
+      <div class="camera-card reveal" data-delay="0" data-id="sony-a6400" data-name="Sony Alpha a6400" data-price="12999000" data-image="images/cameras/sony-a6400.jpg">
         <div class="camera-img-wrap">
-          <!--  images/cameras/sony-a6400.png  (transparent PNG recommended)  -->
           <img src="images/cameras/sony-a6400.jpg" alt="Sony Alpha a6400" class="camera-real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
           <div class="camera-svg-fallback">
             <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" class="cam-svg">
@@ -361,14 +366,14 @@
           <h3>Sony Alpha a6400</h3>
           <p class="camera-spec">24.2MP APS-C · 4K Video · Real-time Eye AF</p>
           <div class="camera-bottom">
-            <span class="camera-price">Rp.12.999.000</span>
-            <button class="btn-cart" data-name="Sony Alpha a6400"><i class="fa-solid fa-bag-shopping"></i> Add</button>
+            <span class="camera-price">Rp 12.999.000</span>
+            <button class="btn-cart" data-id="sony-a6400" data-name="Sony Alpha a6400" data-price="12999000" data-image="images/cameras/sony-a6400.jpg"><i class="fa-solid fa-bag-shopping"></i> Add</button>
           </div>
         </div>
       </div>
 
       <!-- Fujifilm X-T30 II -->
-      <div class="camera-card reveal" data-delay="100">
+      <div class="camera-card reveal" data-delay="100" data-id="fujifilm-xt30" data-name="Fujifilm X-T30 II" data-price="14499000" data-image="images/cameras/fujifilm-xt30.jpg">
         <div class="camera-img-wrap">
           <img src="images/cameras/fujifilm-xt30.jpg" alt="Fujifilm X-T30 II" class="camera-real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
           <div class="camera-svg-fallback">
@@ -390,14 +395,14 @@
           <h3>Fujifilm X-T30 II</h3>
           <p class="camera-spec">26.1MP X-Trans · Film Simulation · 4K UHD</p>
           <div class="camera-bottom">
-            <span class="camera-price">Rp.14.499.000</span>
-            <button class="btn-cart" data-name="Fujifilm X-T30 II"><i class="fa-solid fa-bag-shopping"></i> Add</button>
+            <span class="camera-price">Rp 14.499.000</span>
+            <button class="btn-cart" data-id="fujifilm-xt30" data-name="Fujifilm X-T30 II" data-price="14499000" data-image="images/cameras/fujifilm-xt30.jpg"><i class="fa-solid fa-bag-shopping"></i> Add</button>
           </div>
         </div>
       </div>
 
       <!-- Canon EOS R50 -->
-      <div class="camera-card reveal" data-delay="200">
+      <div class="camera-card reveal" data-delay="200" data-id="canon-r50" data-name="Canon EOS R50" data-price="11999000" data-image="images/cameras/canon-r50.jpg">
         <div class="camera-img-wrap">
           <img src="images/cameras/canon-r50.jpg" alt="Canon EOS R50" class="camera-real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
           <div class="camera-svg-fallback">
@@ -419,14 +424,14 @@
           <h3>Canon EOS R50</h3>
           <p class="camera-spec">24.2MP RF Mount · 4K Crop · Dual Pixel AF II</p>
           <div class="camera-bottom">
-            <span class="camera-price">Rp.11.999.000</span>
-            <button class="btn-cart" data-name="Canon EOS R50"><i class="fa-solid fa-bag-shopping"></i> Add</button>
+            <span class="camera-price">Rp 11.999.000</span>
+            <button class="btn-cart" data-id="canon-r50" data-name="Canon EOS R50" data-price="11999000" data-image="images/cameras/canon-r50.jpg"><i class="fa-solid fa-bag-shopping"></i> Add</button>
           </div>
         </div>
       </div>
 
       <!-- Sony A7 III -->
-      <div class="camera-card reveal" data-delay="300">
+      <div class="camera-card reveal" data-delay="300" data-id="sony-a7iii" data-name="Sony A7 III" data-price="22999000" data-image="images/cameras/sony-a7iii.jpg">
         <div class="camera-img-wrap">
           <img src="images/cameras/sony-a7iii.jpg" alt="Sony A7 III" class="camera-real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
           <div class="camera-svg-fallback">
@@ -448,14 +453,14 @@
           <h3>Sony A7 III</h3>
           <p class="camera-spec">24.2MP Full-Frame · 693 PDAF · 4K HDR</p>
           <div class="camera-bottom">
-            <span class="camera-price"> Rp.22.999.000</span>
-            <button class="btn-cart" data-name="Sony A7 III"><i class="fa-solid fa-bag-shopping"></i> Add</button>
+            <span class="camera-price">Rp 22.999.000</span>
+            <button class="btn-cart" data-id="sony-a7iii" data-name="Sony A7 III" data-price="22999000" data-image="images/cameras/sony-a7iii.jpg"><i class="fa-solid fa-bag-shopping"></i> Add</button>
           </div>
         </div>
       </div>
 
       <!-- GoPro HERO 12 -->
-      <div class="camera-card reveal" data-delay="400">
+      <div class="camera-card reveal" data-delay="400" data-id="gopro-hero12" data-name="GoPro HERO 12" data-price="5999000" data-image="images/cameras/gopro-hero12.jpg">
         <div class="camera-img-wrap">
           <img src="images/cameras/gopro-hero12.jpg" alt="GoPro HERO 12" class="camera-real-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
           <div class="camera-svg-fallback">
@@ -477,8 +482,8 @@
           <h3>GoPro HERO 12</h3>
           <p class="camera-spec">27MP · 5.3K60 Video · HyperSmooth 6.0</p>
           <div class="camera-bottom">
-            <span class="camera-price">Rp.5.999.000</span>
-            <button class="btn-cart" data-name="GoPro HERO 12"><i class="fa-solid fa-bag-shopping"></i> Add</button>
+            <span class="camera-price">Rp 5.999.000</span>
+            <button class="btn-cart" data-id="gopro-hero12" data-name="GoPro HERO 12" data-price="5999000" data-image="images/cameras/gopro-hero12.jpg"><i class="fa-solid fa-bag-shopping"></i> Add</button>
           </div>
         </div>
       </div>
@@ -581,7 +586,9 @@
           <li class="disabled"><i class="fa-solid fa-xmark"></i> Print Package</li>
           <li class="disabled"><i class="fa-solid fa-xmark"></i> Drone Coverage</li>
         </ul>
-        <a href="#" class="btn btn-outline-gold w-full">Book Basic</a>
+        <button class="btn btn-outline-gold w-full btn-book-wa" data-package="Basic" data-price="Rp 500.000 - Rp 750.000">
+          <i class="fa-brands fa-whatsapp"></i> Book Basic
+        </button>
       </div>
 
       <!-- Standard -->
@@ -607,7 +614,9 @@
           <li class="disabled"><i class="fa-solid fa-xmark"></i> Premium Print Album</li>
           <li class="disabled"><i class="fa-solid fa-xmark"></i> Drone Coverage</li>
         </ul>
-        <a href="#" class="btn btn-gold w-full">Book Standard</a>
+        <button class="btn btn-gold w-full btn-book-wa" data-package="Standard" data-price="Rp 1.500.000 - Rp 2.500.000">
+          <i class="fa-brands fa-whatsapp"></i> Book Standard
+        </button>
       </div>
 
       <!-- Premium -->
@@ -632,7 +641,9 @@
           <li><i class="fa-solid fa-check"></i> Drone Coverage</li>
           <li><i class="fa-solid fa-check"></i> 2 Photographers + Editor</li>
         </ul>
-        <a href="#" class="btn btn-outline-gold w-full">Book Premium</a>
+        <button class="btn btn-outline-gold w-full btn-book-wa" data-package="Premium" data-price="Rp 5.500.000 - Rp 7.500.000">
+          <i class="fa-brands fa-whatsapp"></i> Book Premium
+        </button>
       </div>
     </div>
 
@@ -650,11 +661,11 @@
           <a href="#hero" class="logo footer-logo">GENZ<span>PHOTO</span></a>
           <p>Where artistry meets technology. Creating visual stories that transcend time and resonate with the soul.</p>
           <div class="footer-socials">
-            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/6285761450850" class="social-link" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
 
@@ -682,9 +693,9 @@
           <h4>Get In Touch</h4>
           <ul class="contact-list">
             <li><i class="fa-solid fa-location-dot"></i><span>Jl. Premium Studio No. 12, South Jakarta, Indonesia</span></li>
-            <li><i class="fa-solid fa-phone"></i><a href="tel:+6281234567890">+62 857-6145-0850</a></li>
-            <li><i class="fa-solid fa-envelope"></i><a href="mailto:hello@genzphoto.id">genzphoto@gmail.com</a></li>
-            <li><i class="fa-brands fa-whatsapp"></i><a href="#">WhatsApp Us</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="tel:+6285761450850">+62 857-6145-0850</a></li>
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:genzphoto@gmail.com">genzphoto@gmail.com</a></li>
+            <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/6285761450850" target="_blank">WhatsApp Us</a></li>
           </ul>
         </div>
       </div>
@@ -702,10 +713,50 @@
   </div>
 </footer>
 
+<!-- ═══ SLIDE-OVER SHOPPING CART DRAWER ═══ -->
+<div id="cartOverlay" class="cart-overlay"></div>
+<aside id="cartDrawer" class="cart-drawer" aria-labelledby="cartDrawerTitle" role="dialog" aria-modal="true">
+  <div class="cart-header">
+    <div class="cart-header-title">
+      <i class="fa-solid fa-bag-shopping gold-text"></i>
+      <h3 id="cartDrawerTitle">Shopping Cart</h3>
+      <span id="cartItemCountHeader" class="cart-count-badge">0 item</span>
+    </div>
+    <button id="cartCloseBtn" class="cart-close-btn" aria-label="Close Shopping Cart">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <div id="cartBody" class="cart-body">
+    <!-- Items rendered dynamically via JavaScript -->
+  </div>
+
+  <div id="cartFooter" class="cart-footer">
+    <div class="cart-subtotal-row">
+      <span>Total Estimated:</span>
+      <span id="cartTotalPrice" class="cart-total-price">Rp 0</span>
+    </div>
+    <p class="cart-footer-note">
+      <i class="fa-solid fa-circle-info"></i> Direct order & rental confirmation via official WhatsApp Admin.
+    </p>
+    <div class="cart-footer-actions">
+      <button id="checkoutWaBtn" class="btn btn-gold w-full btn-checkout-wa">
+        <i class="fa-brands fa-whatsapp"></i> Checkout via WhatsApp
+      </button>
+      <button id="clearCartBtn" class="btn-clear-cart">
+        <i class="fa-solid fa-trash-can"></i> Clear Cart
+      </button>
+    </div>
+  </div>
+</aside>
+
 <!-- Toast -->
 <div id="cartToast" class="cart-toast">
-  <i class="fa-solid fa-circle-check"></i>
-  <span id="cartToastMsg">Item added to cart!</span>
+  <div class="toast-content">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="cartToastMsg">Item added to cart!</span>
+  </div>
+  <button id="toastViewCartBtn" class="toast-view-btn">View Cart</button>
 </div>
 
 <!-- Back to Top -->
